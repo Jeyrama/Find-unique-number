@@ -11,3 +11,8 @@ It’s guaranteed that array contains at least 3 numbers.
 
 
 // Solution
+
+function findUniq(arr) {
+  arr.sort((a,b)=>a-b);
+  return arr[0]==arr[1]?arr.pop():arr[0]
+}
