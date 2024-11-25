@@ -18,3 +18,18 @@ function findUniq(arr) {
 }
 
 // or
+
+function findUniq(arr) {
+  let uniq = {},
+      result;
+  arr.forEach(function(item) {
+    uniq[item] = uniq[item] + 1 || 1;
+  });
+  Object.keys(uniq).forEach(function(key) {
+    if (uniq[key] == 1) {
+      result = key;
+    }
+  });
+  
+  return parseFloat(result);
+}
