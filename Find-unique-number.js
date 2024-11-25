@@ -8,3 +8,6 @@ findUniq([ 0, 0, 0.55, 0, 0 ]) === 0.55
 
 It’s guaranteed that array contains at least 3 numbers.
 */
+
+
+// Solution
